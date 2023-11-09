@@ -5,57 +5,65 @@ import { motion, useScroll } from "framer-motion";
 function Projects() {
   const projectItems = [
     {
-      title: "Project Title",
-      langUsed: "HTML,CSS,js",
-      description: "This is a project description.",
-      github: "Githuburl",
-      hosted: "hostedURl",
+      title: "Node Js CRUD API",
+      langUsed: "Node js, MongoDB",
+      description: "A complete Node js Crud api for Todo App",
+      github: "https://github.com/raushanraj99/node_js_todo_api.git",
+      hosted: "https://todo-app-nodejs-9jyl.onrender.com/",
     },
     {
-      title: "1 Project Title",
-      description: "1 This is a project description.",
-      langUsed: "HTML,CSS,js",
-      github: "Githuburl",
-      hosted: "hostedURl",
+      title: "Social Media with Music",
+      langUsed: "HTML,CSS",
+      description: "This is Just landing page, for using social media while listening music",
+      github: "https://github.com/raushanraj99/social-share-music.git",
+      hosted: "https://raushanraj99.github.io/social-share-music/",
     },
     {
-      title: "1 Project Title",
-      description: "1 This is a project description.",
-      langUsed: "HTML,CSS,js",
-      github: "Githuburl",
-      hosted: "hostedURl",
+      title: "Calculator", 
+      description: "A Calculator to perform Calculation of Addition, Substraction, Multiplication and Division",
+      langUsed: "HTML, CSS, Js",
+      github: "https://github.com/raushanraj99/Calculator.git",
+      hosted: "https://raushanraj99.github.io/Calculator/",
     },
     {
-      title: "1 Project Title",
-      description: "1 This is a project description.",
-      langUsed: "HTML,CSS,js",
-      github: "Githuburl",
-      hosted: "hostedURl",
+      title: "Snake and Ladded",
+      description: "A Snake and ladded game in digital form, which we used to play on board with all rhe rules and regulation",
+      langUsed: "Python",
+      github: "https://github.com/raushanraj99/snake-and-ladder.git",
+      hosted: "https://github.com/raushanraj99/snake-and-ladder.git",
+    },
+    
+    {
+      title: "Native Buddy",
+      description: " A Full-Stack Web App to book a buddy for the Tourist at unknown places.",
+      langUsed: "Node js, MongoDB, hbs, css",
+      github: "https://github.com/raushanraj99/Native-Buddy.git",
+      hosted: "https://native-buddy.onrender.com/",
+    },
+   
+    {
+      title: "Guess The Movie",
+      description: "Movie name will be guess by watching blank spaces and few characters, accordingly points will be add",
+      langUsed: "Python ",
+      github: "https://github.com/raushanraj99/guess-the-movie.git",
+      hosted: "https://github.com/raushanraj99/guess-the-movie",
     },
     {
-      title: "1 Project Title",
-      description: "1 This is a project description.",
-      langUsed: "HTML,CSS,js",
-      github: "Githuburl",
-      hosted: "hostedURl",
+      title: "Python Cgi && Tkinter with AWS",
+      langUsed: "AWS, Python, Linux, Docker, Js, HTML",
+      description: "A Stopwatch project, based on HTML, CSS and Js to check you speed",
+      github: "https://github.com/raushanraj99/summer_project_final_cgi_programming.git",
+      hosted: "https://github.com/raushanraj99/summer_project_final_cgi_programming.git",
     },
     {
-      title: "1 Project Title",
-      description: "1 This is a project description.",
-      langUsed: "HTML,CSS,js",
-      github: "Githuburl",
-      hosted: "hostedURl",
-    },
-    {
-      title: "1 Project Title",
-      description: "1 This is a project description.",
-      langUsed: "HTML,CSS,js",
-      github: "Githuburl",
-      hosted: "hostedURl",
+      title: "Calculator using python ",
+      langUsed: "Python",
+      description: "GUI Based operational Calculator using Tkinter for your daily Expenditure",
+      github: "https://github.com/raushanraj99/calculator_using_python.git",
+      hosted: "https://github.com/raushanraj99/calculator_using_python.git",
     },
   ];
-  const ref = useRef(null);
-  const { scrollXProgress } = useScroll({ container: ref });
+
 
   return (
     <section className="projects pt-10 pb-5 bg-[#1F2531]">
@@ -64,19 +72,22 @@ function Projects() {
             <h1 className="text-[1.6rem] font-bold md:text-[3rem]">Projects</h1>
           </div>
           <div className="flex flex-row flex-wrap justify-center  mt-5 w-full md:w-full">
-            {projectItems.map((item) => (
-              <div className="bg-[#181F2D] h-[170px] m-3 p-2 border-2 border-[#7b7a7a] rounded-md w-[300px] ">
+            {
+            
+            
+            projectItems.map((item) => (
+              <div className="bg-[#181F2D] h-[190px] m-3 p-2 border-2 border-[#7b7a7a] rounded-md w-[300px] ">
                 <div className="flex flex-col	text-left ">
                   <h1 className="text-[white] font-bold tracking-wide bg-[#1F2531] p-1 text-[1rem] ">
-                    Social media Music{" "}
+                    {item.title}
                   </h1>
                   <p className=" text-[#bdbdbd] opacity-60 font-bold text-[0.8rem]">
-                    Html,CSS
+                    {item.langUsed}
                   </p>
-                  <p className="">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <p className="h-[10vh] text-[1rem] pt-2">
+                    {item.description}
                   </p>
-                  <div className="flex flex-row justify-evenly align-middle mt-[2vh] items-center">
+                  <div className="flex flex-row justify-evenly align-middle mt-[5vh] items-center">
                     <button className="bg-[#CBDB11] text-[#181F2D] text-[0.7rem] font-bold p-1 w-[4rem] h-[1.4rem]">
                       Github
                     </button>
@@ -86,7 +97,10 @@ function Projects() {
                   </div>
                 </div>
               </div>
-            ))}
+            ))
+            
+            
+            }
           </div>
         </div>
       </section>

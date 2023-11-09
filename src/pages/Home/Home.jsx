@@ -2,6 +2,8 @@ import React from "react";
 
 
 import Profile from "../../Assest/Profile_img/profile-img.jpeg";
+import Projects from "../Projects/Projects";
+import Skills from "../Skills/Skills";
 
 function Home() {
   const skillsList = [
@@ -147,7 +149,7 @@ function Home() {
           </div>
         </div>
 
-        <a href="#" target="_blank">
+        <a href="https://drive.google.com/file/d/1uEkLn_uceB9y2sWu4GnqmhMjD9igwI90/view?usp=drive_link" target="_blank">
           <button className="w-100px bg-[#CBDB11]  hover:shadow-lg hover:shadow-[#CBDB11] text-[black] font-bold p-3 mt-10">
             Download Resume
           </button>
@@ -155,7 +157,9 @@ function Home() {
       </section>
 
       {/* Skills and Technology Section  */}
-      <section className="w-full mt-10 pb-5 ">
+
+      <Skills/>
+      {/* <section className="w-full mt-10 pb-5 ">
         <div className="inline-block justify-center">
           <div className="">
             <h1 className="text-[1.6rem] font-bold md:text-[3rem]">
@@ -177,10 +181,11 @@ function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Project Section  */}
-      <section className="projects mt-10 pb-5">
+      <Projects/>
+      {/* <section className="projects mt-10 pb-5">
         <div className="w-[95vw] inline-block justify-center overflow-hidden">
           <div>
             <h1 className="text-[1.6rem] font-bold md:text-[3rem]">Projects</h1>
@@ -211,9 +216,7 @@ function Home() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Contact us ie. Footer  */}
+      </section> */}
 
 
 
