@@ -84,7 +84,7 @@ function Projects() {
                   <p className=" text-[#bdbdbd] opacity-60 font-bold text-[0.8rem]">
                     {item.langUsed}
                   </p>
-                  <p className="h-[10vh] text-[1rem] pt-2">
+                  <p className="h-[9vh] text-[1rem] pt-2">
                     {item.description}
                   </p>
                   <div className="flex flex-row justify-evenly align-middle mt-[5vh] items-center">
