@@ -76,7 +76,7 @@ function Projects() {
             
             
             projectItems.map((item) => (
-              <div className="bg-[#181F2D] h-[190px] m-3 p-2 border-2 border-[#7b7a7a] rounded-md w-[300px] ">
+              <div className="bg-[#181F2D] h-full m-3 p-2 border-2 border-[#7b7a7a] rounded-md w-[300px] ">
                 <div className="flex flex-col	text-left ">
                   <h1 className="text-[white] font-bold tracking-wide bg-[#1F2531] p-1 text-[1rem] ">
                     {item.title}
@@ -87,7 +87,7 @@ function Projects() {
                   <p className="h-[9vh] text-[1rem] pt-2">
                     {item.description}
                   </p>
-                  <div className="flex flex-row justify-evenly align-middle mt-[5vh] items-center">
+                  <div className="flex flex-row justify-evenly align-middle mt-[5vh] mb-3 items-center">
                     <a href={item.github} target="_blank" rel="noopener noreferrer">
                       <button className="bg-[#CBDB11] text-[#181F2D] text-[0.7rem] font-bold p-1 w-[4rem] h-[1.4rem]">
                         Github
