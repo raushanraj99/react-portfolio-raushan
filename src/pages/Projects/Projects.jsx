@@ -88,12 +88,16 @@ function Projects() {
                     {item.description}
                   </p>
                   <div className="flex flex-row justify-evenly align-middle mt-[5vh] items-center">
-                    <button className="bg-[#CBDB11] text-[#181F2D] text-[0.7rem] font-bold p-1 w-[4rem] h-[1.4rem]">
-                      Github
-                    </button>
-                    <button className="bg-[#CBDB11] text-[#181F2D] text-[0.7rem] font-bold p-1 w-[4rem] h-[1.4rem] ">
-                      View
-                    </button>
+                    <a href={item.github} target="_blank" rel="noopener noreferrer">
+                      <button className="bg-[#CBDB11] text-[#181F2D] text-[0.7rem] font-bold p-1 w-[4rem] h-[1.4rem]">
+                        Github
+                      </button>
+                    </a>
+                    <a href={item.hosted} target="_blank" rel="noopener noreferrer">
+                      <button className="bg-[#CBDB11] text-[#181F2D] text-[0.7rem] font-bold p-1 w-[4rem] h-[1.4rem] ">
+                        View
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
