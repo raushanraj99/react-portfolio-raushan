@@ -46,7 +46,7 @@ function Projects() {
       description: "Movie name will be guess by watching blank spaces and few characters, accordingly points will be add",
       langUsed: "Python ",
       github: "https://github.com/raushanraj99/guess-the-movie.git",
-      hosted: "https://github.com/raushanraj99/guess-the-movie",
+      hosted: "https://replit.com/@raushanraj99/guess-the-movie?s=app",
     },
     {
       title: "Python Cgi && Tkinter with AWS",
