@@ -30,7 +30,7 @@ function Projects() {
       description: "A Snake and ladded game in digital form, which we used to play on board with all rhe rules and regulation",
       langUsed: "Python",
       github: "https://github.com/raushanraj99/snake-and-ladder.git",
-      hosted: "https://github.com/raushanraj99/snake-and-ladder.git",
+      hosted: "https://replit.com/@raushanraj99/snakeandladder-game?s=app",
     },
     
     {
