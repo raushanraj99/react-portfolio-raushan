@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
+
 
 function Projects() {
   const projectItems = [
@@ -11,6 +10,22 @@ function Projects() {
       github: "https://github.com/raushanraj99/node_js_todo_api.git",
       hosted: "https://todo-app-nodejs-9jyl.onrender.com/",
     },
+    {
+      title: "Native Buddy",
+      description: " A Full-Stack Web App to book a buddy for the Tourist at unknown places.",
+      langUsed: "Node js, MongoDB, hbs, css",
+      github: "https://github.com/raushanraj99/Native-Buddy.git",
+      hosted: "https://native-buddy.onrender.com/",
+    },
+    {
+      title: "Blog Application",
+      description: " A Full-Stack Web App to write and show you ideas to everyone.",
+      langUsed: "Express, MongoDB, ejs, css, ",
+      github: "https://github.com/raushanraj99/Blog_application.git",
+      hosted: "https://bharatblog.onrender.com/",
+    },
+   
+
     {
       title: "Social Media with Music",
       langUsed: "HTML,CSS",
@@ -26,21 +41,13 @@ function Projects() {
       hosted: "https://raushanraj99.github.io/Calculator/",
     },
     {
-      title: "Snake and Ladded",
+      title: "Snake and Ladder",
       description: "A Snake and ladded game in digital form, which we used to play on board with all rhe rules and regulation",
       langUsed: "Python",
       github: "https://github.com/raushanraj99/snake-and-ladder.git",
       hosted: "https://github.com/raushanraj99/snake-and-ladder.git",
     },
     
-    {
-      title: "Native Buddy",
-      description: " A Full-Stack Web App to book a buddy for the Tourist at unknown places.",
-      langUsed: "Node js, MongoDB, hbs, css",
-      github: "https://github.com/raushanraj99/Native-Buddy.git",
-      hosted: "https://native-buddy.onrender.com/",
-    },
-   
     {
       title: "Guess The Movie",
       description: "Movie name will be guess by watching blank spaces and few characters, accordingly points will be add",
@@ -62,6 +69,7 @@ function Projects() {
       github: "https://github.com/raushanraj99/calculator_using_python.git",
       hosted: "https://github.com/raushanraj99/calculator_using_python.git",
     },
+    
   ];
 
 
