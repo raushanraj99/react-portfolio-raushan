@@ -45,7 +45,7 @@ function Projects() {
       description: "A Snake and ladded game in digital form, which we used to play on board with all rhe rules and regulation",
       langUsed: "Python",
       github: "https://github.com/raushanraj99/snake-and-ladder.git",
-      hosted: "https://github.com/raushanraj99/snake-and-ladder.git",
+      hosted: "https://replit.com/@raushanraj99/snakeandladder-game?s=app",
     },
     
     {
@@ -53,7 +53,7 @@ function Projects() {
       description: "Movie name will be guess by watching blank spaces and few characters, accordingly points will be add",
       langUsed: "Python ",
       github: "https://github.com/raushanraj99/guess-the-movie.git",
-      hosted: "https://github.com/raushanraj99/guess-the-movie",
+      hosted: "https://replit.com/@raushanraj99/guess-the-movie?s=app",
     },
     {
       title: "Python Cgi && Tkinter with AWS",
