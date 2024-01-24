@@ -126,20 +126,25 @@ function Home() {
 
   return (
     <div className="HomeSection bg-[#1F2531]">
-      <div className="h-[80vh] justify-center items-center flex  md:flex-row flex-col">
+      <div className="h-[80vh] justify-center items-center flex  md:flex-row flex-col ">
         <div className=" w-full flex justify-center ">
           <img
             src={Profile}
             alt="Profile Image"
-            className="w-[50%] rounded-[50%] shadow-md shadow-[#CBDB11]"
+            className="w-[50%]  rounded-[50%] shadow-md shadow-[#CBDB11] z-10"
             data-aos="slide-down"
           />
         </div>
-        <div className="w-full mt-12 md:mt-0">
+        <div className="w-full mt-12 md:mt-0 relative z-10">
           <h1 className="text-[white] text-[7vw] font-bold" data-aos="fade-up" >Raushan Raj</h1>
           <p>MERN STACK DEVELOPER || PYTHON</p>
         </div>
       </div>
+      <div className=" absolute top-[61%] z-0">
+        <marquee behavior="alternate" direction="">
+          <h1 className="text-[180px] font-bold uppercase opacity-10">Programmer coder web developer python developer</h1>
+        </marquee>
+        </div>
 
       {/* About me Section  */}
 
@@ -147,7 +152,7 @@ function Home() {
         <div className="flex flex-col justify-center text-center ">
           <h1 className="text-[2.4rem] font-bold md:text-[3rem]" data-aos="zoom-in">About-Me</h1>
           <div className=" mt-10 mx-4 md:mx-10" data-aos="slide-up">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
+            {/* Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book. It has survived not
@@ -155,7 +160,8 @@ function Home() {
             remaining essentially unchanged. It was popularised in the 1960s
             with the release of Letraset sheets containing Lorem Ipsum passages,
             and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            PageMaker including versions of Lorem Ipsum. */}
+            I'm a student passionate about web development and Python, currently studying at Haldia Institute of Technology for a B.Tech in Computer Science. I love working on various projects. From making coffee orders with hand gestures to leading a team in building a cool web app, I enjoy blending creativity with tech skills. I've won in the Lakshya bot race and participated in overnight hackathons in the college fest. Let's explore the fun side of coding and creativity together!
           </div>
         </div>
 
