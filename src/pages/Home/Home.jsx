@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { IoMdDownload } from "react-icons/io";
 
 
 import Profile from "../../Assest/Profile_img/profile-img.jpeg";
@@ -6,114 +9,120 @@ import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 
 function Home() {
-  const skillsList = [
-    {
-      name: "Python",
-      logo: "fa-brands fa-python fa-lg",
-      
-    },
-    {
-      name: "Java",
-      logo: "fa-brands fa-java fa-lg",
-    },
-    {
-      
-      name: "C",
-      logo: "fa-solid fa-c fa-lg",
-    },
-    {
-      
-      name: "HTML5",
-      logo: "fa-brands fa-html5 fa-lg",
-    },
-    {
-      
-      name: "CSS",
-      logo: "fa-brands fa-css3-alt fa-lg",
-    },
-    {
-      name: "JavaScript",
-      logo: "fa-brands fa-js fa-lg",
-    },
-    {
-      name: "MongoDB",
-      logo: "L0",
-    },
-    {
-      name: "Node js",
-      logo: "fa-brands fa-node fa-lg",
-      
-    },
-    {
-      name: "Git",
-      logo: "fa-brands fa-git fa-lg",
-    },
-    {
-      name: "GitHub",
-      logo: "fa-brands fa-github fa-lg",
-    },
-    {
-      name: "AWS",
-      logo: "fa-brands fa-aws fa-lg",
-    },
-    {
-      name: "Redhat-9",
-      logo: "fa-brands fa-redhat fa-lg",
-    },
-  ];
 
-  // Project section
-  const projectItems = [
-    {
-      title: "Project Title",
-      langUsed: "HTML,CSS,js",
-      description: "This is a project description.",
-      github: "Githuburl",
-      hosted: "hostedURl",
-    },
-    {
-      title: "1 Project Title",
-      description: "1 This is a project description.",
-      langUsed: "HTML,CSS,js",
-      github: "Githuburl",
-      hosted: "hostedURl",
-    },
-    {
-      title: "1 Project Title",
-      description: "1 This is a project description.",
-      langUsed: "HTML,CSS,js",
-      github: "Githuburl",
-      hosted: "hostedURl",
-    },
-    {
-      title: "1 Project Title",
-      description: "1 This is a project description.",
-      langUsed: "HTML,CSS,js",
-      github: "Githuburl",
-      hosted: "hostedURl",
-    },
-    {
-      title: "1 Project Title",
-      description: "1 This is a project description.",
-      langUsed: "HTML,CSS,js",
-      github: "Githuburl",
-      hosted: "hostedURl",
-    },
-    {
-      title: "1 Project Title",
-      description: "1 This is a project description.",
-      langUsed: "HTML,CSS,js",
-      github: "Githuburl",
-      hosted: "hostedURl",
-    },
-    {
-      title: "1 Project Title",
-      description: "1 This is a project description.",
-      langUsed: "HTML,CSS,js",
-      github: "Githuburl",
-      hosted: "hostedURl",
-    },
-  ];
+  useEffect(()=>{
+    AOS.init({duration:1200});
+  },[])
+
+
+  // const skillsList = [
+  //   {
+  //     name: "Python",
+  //     logo: "fa-brands fa-python fa-lg",
+      
+  //   },
+  //   {
+  //     name: "Java",
+  //     logo: "fa-brands fa-java fa-lg",
+  //   },
+  //   {
+      
+  //     name: "C",
+  //     logo: "fa-solid fa-c fa-lg",
+  //   },
+  //   {
+      
+  //     name: "HTML5",
+  //     logo: "fa-brands fa-html5 fa-lg",
+  //   },
+  //   {
+      
+  //     name: "CSS",
+  //     logo: "fa-brands fa-css3-alt fa-lg",
+  //   },
+  //   {
+  //     name: "JavaScript",
+  //     logo: "fa-brands fa-js fa-lg",
+  //   },
+  //   {
+  //     name: "MongoDB",
+  //     logo: "L0",
+  //   },
+  //   {
+  //     name: "Node js",
+  //     logo: "fa-brands fa-node fa-lg",
+      
+  //   },
+  //   {
+  //     name: "Git",
+  //     logo: "fa-brands fa-git fa-lg",
+  //   },
+  //   {
+  //     name: "GitHub",
+  //     logo: "fa-brands fa-github fa-lg",
+  //   },
+  //   {
+  //     name: "AWS",
+  //     logo: "fa-brands fa-aws fa-lg",
+  //   },
+  //   {
+  //     name: "Redhat-9",
+  //     logo: "fa-brands fa-redhat fa-lg",
+  //   },
+  // ];
+
+  // // Project section
+  // const projectItems = [
+  //   {
+  //     title: "Project Title",
+  //     langUsed: "HTML,CSS,js",
+  //     description: "This is a project description.",
+  //     github: "Githuburl",
+  //     hosted: "hostedURl",
+  //   },
+  //   {
+  //     title: "1 Project Title",
+  //     description: "1 This is a project description.",
+  //     langUsed: "HTML,CSS,js",
+  //     github: "Githuburl",
+  //     hosted: "hostedURl",
+  //   },
+  //   {
+  //     title: "1 Project Title",
+  //     description: "1 This is a project description.",
+  //     langUsed: "HTML,CSS,js",
+  //     github: "Githuburl",
+  //     hosted: "hostedURl",
+  //   },
+  //   {
+  //     title: "1 Project Title",
+  //     description: "1 This is a project description.",
+  //     langUsed: "HTML,CSS,js",
+  //     github: "Githuburl",
+  //     hosted: "hostedURl",
+  //   },
+  //   {
+  //     title: "1 Project Title",
+  //     description: "1 This is a project description.",
+  //     langUsed: "HTML,CSS,js",
+  //     github: "Githuburl",
+  //     hosted: "hostedURl",
+  //   },
+  //   {
+  //     title: "1 Project Title",
+  //     description: "1 This is a project description.",
+  //     langUsed: "HTML,CSS,js",
+  //     github: "Githuburl",
+  //     hosted: "hostedURl",
+  //   },
+  //   {
+  //     title: "1 Project Title",
+  //     description: "1 This is a project description.",
+  //     langUsed: "HTML,CSS,js",
+  //     github: "Githuburl",
+  //     hosted: "hostedURl",
+  //   },
+  // ];
 
   return (
     <div className="HomeSection bg-[#1F2531]">
@@ -123,20 +132,21 @@ function Home() {
             src={Profile}
             alt="Profile Image"
             className="w-[50%] rounded-[50%] shadow-md shadow-[#CBDB11]"
+            data-aos="slide-down"
           />
         </div>
         <div className="w-full mt-12 md:mt-0">
-          <h1 className="text-[white] text-[7vw] font-bold">Raushan Raj</h1>
+          <h1 className="text-[white] text-[7vw] font-bold" data-aos="fade-up" >Raushan Raj</h1>
           <p>MERN STACK DEVELOPER || PYTHON</p>
         </div>
       </div>
 
       {/* About me Section  */}
 
-      <section className=" w-full  pt-5 pb-10 bg-[#181F2D] ">
-        <div className="flex flex-col ps-10 pe-10 justify-center ">
-          <h1 className="text-[2.4rem] font-bold md:text-[3rem]">About-Me</h1>
-          <div className=" mt-5 ">
+      <section className=" w-full  pt-10 pb-20 bg-[#181F2D] ">
+        <div className="flex flex-col justify-center text-center ">
+          <h1 className="text-[2.4rem] font-bold md:text-[3rem]" data-aos="zoom-in">About-Me</h1>
+          <div className=" mt-10 mx-4 md:mx-10" data-aos="slide-up">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -149,9 +159,10 @@ function Home() {
           </div>
         </div>
 
-        <a href="https://drive.google.com/file/d/1uEkLn_uceB9y2sWu4GnqmhMjD9igwI90/view?usp=drive_link" target="_blank">
-          <button className="w-100px bg-[#CBDB11]  hover:shadow-lg hover:shadow-[#CBDB11] text-[black] font-bold p-3 mt-10">
-            Download Resume
+        <a href="https://drive.google.com/file/d/1uEkLn_uceB9y2sWu4GnqmhMjD9igwI90/view?usp=drive_link" target="_blank" className="flex flex-row justify-center">
+          <button className="w-100px bg-[#CBDB11]  hover:shadow-lg hover:shadow-[#b3db11f6] hover:border-2  text-[black] font-extrabold p-3 mt-10 transition-all duration-500 flex justify-center items-center " data-aos="slide-up" >
+          <IoMdDownload className="bg-[black] mx-auto animate-bounce w-10 h-10 rounded-[50%] p-2 items-center" />
+            Download Resume  
           </button>
         </a>
       </section>

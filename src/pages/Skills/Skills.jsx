@@ -70,10 +70,10 @@ function Skills() {
 
           <div className="flex flex-row flex-wrap justify-center mt-5 w-full md:w-[80vw]">
             {skillsList.map((item) => (
-              <div className="box bg-[#181F2D] w-[120px] h-[80px] m-3 pt-1 shadow-sm hover:shadow-md hover:shadow-[#CBDB11] shadow-[#CBDB11]">
-                <div className="card">
-                <div className="card-body">
-                    <h3>{item.name}</h3>
+              <div className="box bg-[#181F2D] w-[120px] h-[80px] m-3 pt-1 shadow-sm hover:shadow-md hover:shadow-[#CBDB11] shadow-[#CBDB11] transition-all duration-400" data-aos="slide-up">
+                <div className="card" >
+                <div className="card-body" >
+                    <h3 className='pb-2'>{item.name}</h3>
                     <p className={item.logo}></p>
                     
                   </div>

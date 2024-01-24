@@ -9,6 +9,7 @@ function Projects() {
       description: "A complete Node js Crud api for Todo App",
       github: "https://github.com/raushanraj99/node_js_todo_api.git",
       hosted: "https://todo-app-nodejs-9jyl.onrender.com/",
+      aosvalue:"fade-left"
     },
     {
       title: "Native Buddy",
@@ -16,6 +17,7 @@ function Projects() {
       langUsed: "Node js, MongoDB, hbs, css",
       github: "https://github.com/raushanraj99/Native-Buddy.git",
       hosted: "https://native-buddy.onrender.com/",
+      aosvalue:"fade-right"
     },
     {
       title: "Blog Application",
@@ -23,15 +25,17 @@ function Projects() {
       langUsed: "Express, MongoDB, ejs, css, ",
       github: "https://github.com/raushanraj99/Blog_application.git",
       hosted: "https://bharatblog.onrender.com/",
+      aosvalue:"fade-left"
     },
-   
-
+    
+    
     {
       title: "Social Media with Music",
       langUsed: "HTML,CSS",
       description: "This is Just landing page, for using social media while listening music",
       github: "https://github.com/raushanraj99/social-share-music.git",
       hosted: "https://raushanraj99.github.io/social-share-music/",
+      aosvalue:"fade-right",
     },
     {
       title: "Calculator", 
@@ -39,6 +43,7 @@ function Projects() {
       langUsed: "HTML, CSS, Js",
       github: "https://github.com/raushanraj99/Calculator.git",
       hosted: "https://raushanraj99.github.io/Calculator/",
+      aosvalue:"fade-left",
     },
     {
       title: "Snake and Ladder",
@@ -46,6 +51,7 @@ function Projects() {
       langUsed: "Python",
       github: "https://github.com/raushanraj99/snake-and-ladder.git",
       hosted: "https://replit.com/@raushanraj99/snakeandladder-game?s=app",
+      aosvalue:"fade-right",
     },
     
     {
@@ -54,6 +60,7 @@ function Projects() {
       langUsed: "Python ",
       github: "https://github.com/raushanraj99/guess-the-movie.git",
       hosted: "https://replit.com/@raushanraj99/guess-the-movie?s=app",
+      aosvalue:"fade-left",
     },
     {
       title: "Python Cgi && Tkinter with AWS",
@@ -61,6 +68,7 @@ function Projects() {
       description: "A Stopwatch project, based on HTML, CSS and Js to check you speed",
       github: "https://github.com/raushanraj99/summer_project_final_cgi_programming.git",
       hosted: "https://github.com/raushanraj99/summer_project_final_cgi_programming.git",
+      aosvalue:"fade-right",
     },
     {
       title: "Calculator using python ",
@@ -68,6 +76,7 @@ function Projects() {
       description: "GUI Based operational Calculator using Tkinter for your daily Expenditure",
       github: "https://github.com/raushanraj99/calculator_using_python.git",
       hosted: "https://github.com/raushanraj99/calculator_using_python.git",
+      aosvalue:"fade-left",
     },
     
   ];
@@ -84,7 +93,7 @@ function Projects() {
             
             
             projectItems.map((item) => (
-              <div className="bg-[#181F2D] h-full m-3 p-2 border-2 border-[#7b7a7a] rounded-md w-[300px] ">
+              <div className="bg-[#181F2D] h-full m-3 p-2 border-2 border-[#7b7a7a] rounded-md w-[300px] " data-aos={item.aosvalue}>
                 <div className="flex flex-col	text-left ">
                   <h1 className="text-[white] font-bold tracking-wide bg-[#1F2531] p-1 text-[1rem] ">
                     {item.title}
