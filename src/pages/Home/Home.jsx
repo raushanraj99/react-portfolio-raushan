@@ -165,7 +165,7 @@ function Home() {
           </div>
         </div>
 
-        <a href="https://drive.google.com/file/d/1uEkLn_uceB9y2sWu4GnqmhMjD9igwI90/view?usp=drive_link" target="_blank" className="flex flex-row justify-center">
+        <a href="https://drive.google.com/file/d/1uzye4-O2Q5Df2dkxU8n5y-8CXE6bzGrx/view?usp=drive_link" target="_blank" className="flex flex-row justify-center">
           <button className="w-100px bg-[#CBDB11]  hover:shadow-lg hover:shadow-[#b3db11f6] hover:border-2  text-[black] font-extrabold p-3 mt-10 transition-all duration-500 flex justify-center items-center " data-aos="slide-up" >
           <IoMdDownload className="bg-[black] mx-auto animate-bounce w-10 h-10 rounded-[50%] p-2 items-center" />
             Download Resume  
